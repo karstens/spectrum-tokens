@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/product.schema.json",
+  "title": "Interactive Set",
+  "description": "A set of tokens organized in interactive states.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The unique identifier for a component",
+      "type": "string",
+      "pattern": ""
+    },
+    "states": {
+      "type": "object",
+      "properties": {
+        "default": {
+          "type": "object",
+          "oneOf": [
+            { "$ref": "#/$defs/" },
+            { "$ref": "#/$defs/" }
+          ]
+        },
+        "hover": {
+          "type": "string"
+        },
+        "down": {
+          "type": "string"
+        },
+        "key-focus": {
+          "type": "string"
+        }
+      },
+      "required": ["default"]
+    }
+  },
+  "required": ["name"],
+  "$defs": {
+    "alias": {},
+    "colorToken": {},
+    "dimensionToken": {},
+    "": {}
+  }
+}

@@ -1,0 +1,123 @@
+"Tokens for a set of interactive states"
+type InteractiveSet {
+  id: String!
+  name: String!
+  states: StatesSet
+}
+
+"TODO ColorOptionOrList Union Desc"
+union ColorOptionOrList = ColorToken | ColorAlias | ColorOptionList
+
+"TODO ColorOption Union Desc"
+union ColorOption = ColorToken | ColorAlias
+
+union ColorValueOption = ColorValue | ColorValueList
+
+"TODO StatesSet Desc"
+type StatesSet {
+  default: ColorOptionOrList!
+  hover: ColorOptionOrList
+  down: ColorOptionOrList
+  keyFocus: ColorOptionOrList
+}
+
+type ColorValue {
+  value: String!
+  r: Int
+  g: Int
+  b: Int
+  a: Int
+  tags: [Tag!]
+}
+
+type ColorValueList {
+  values: [ColorValue!]!
+}
+
+"TODO ColorToken Desc"
+type ColorToken implements Token {
+  id: String!
+  name: String!
+  value: ColorValueOption!
+  tags: [Tag!]
+}
+
+"TODO ColorAlias Desc"
+type ColorAlias implements Alias {
+  id: String!
+  name: String!
+  reference: ColorOption!
+  tags: [Tag!]
+}
+
+"TODO ColorOptionList Desc"
+type ColorOptionList {
+  tokens: [ColorOption!]!
+}
+
+"TODO DimensionOptionOrList Union Desc"
+union DimensionOptionOrList = ColorToken | ColorOptionList
+
+"TODO DimensionOption Union Desc"
+union DimensionOption = DimensionToken | DimensionAlias
+
+"TODO DimensionToken Desc"
+type DimensionToken implements Token {
+  id: String!
+  name: String!
+  value: String!
+  dimension: Float
+  units: String
+  tags: [Tag!]
+}
+
+"TODO DimensionAlias Desc"
+type DimensionAlias implements Alias {
+  id: String!
+  name: String!
+  ref: DimensionOption!
+  tags: [Tag!]
+}
+
+"TODO Token interface Desc"
+interface Token {
+  "A unique identifier"
+  id: String!
+  tags: [Tag!]
+}
+
+"TODO Alias interface Desc"
+interface Alias {
+  "A unique identifier"
+  id: String!
+  tags: [Tag!]
+}
+
+"TODO Tag Desc"
+enum Tag {
+  "TODO Desc"
+  Spectrum
+  "TODO Desc"
+  Express
+  "TODO Desc"
+  Desktop
+  "TODO Desc"
+  Mobile
+  "TODO Desc"
+  Light
+  "TODO Desc"
+  Dark
+  "TODO Desc"
+  Darkest
+  "TODO Desc"
+  Wireframe
+}
+
+"TODO interactiveSet Query Desc"
+type Query {
+  interactiveSet(id: String!): InteractiveSet!
+}
+
+fragment colorOptionListFields on ColorOptionList {
+  tokens
+}

@@ -1,0 +1,30 @@
+{
+  "tokens": [
+    {
+      "id": "black",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "__typename": "ColorToken"
+    },
+    {
+      "id": "white",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "__typename": "ColorToken"
+    }
+  ],
+  "aliases": [
+    {
+      "id": "static-black-focus-ring-color",
+      "token_name": "black",
+      "__typename": "Alias"
+    },
+    {
+      "id": "static-white-focus-ring-color",
+      "token_name": "white",
+      "__typename": "Alias"
+    }
+  ]
+}

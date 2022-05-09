@@ -3,11 +3,12 @@
   "version": "0.0.0-development",
   "description": "",
   "main": "config.js",
+  "type": "module",
   "scripts": {
-    "build": "style-dictionary build",
+    "start": "nodemon index.js",
     "clean": "rm -rf dist",
     "pre-commit": "lint-staged",
-    "prepare": "husky install && yarn run build",
+    "prepare": "husky install",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -29,9 +30,15 @@
     "@semantic-release/changelog": "^6.0.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
+    "nodemon": "^2.0.16",
     "prettier": "^2.5.1",
-    "semantic-release": "^19.0.2",
-    "style-dictionary": "^3.7.0",
-    "style-dictionary-sets": "^1.1.0"
+    "semantic-release": "^19.0.2"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "graphql-2-json-schema": "^0.9.1",
+    "lowdb": "^3.0.0"
   }
 }
