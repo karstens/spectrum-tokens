@@ -1,7 +1,7 @@
-import token from "./token.js";
-import alias from "./alias.js";
+import InteractiveSet from "./InteractiveSet.js";
+import ColorToken from "./ColorToken.js"
 
 export default {
-  ...token,
-  ...alias
+  ...InteractiveSet,
+  ...ColorToken
 };

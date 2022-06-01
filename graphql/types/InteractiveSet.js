@@ -1,16 +1,16 @@
 import {
   GraphQLObjectType,
   GraphQLNonNull,
-  GraphQLString,
   GraphQLID,
+  GraphQLString,
+  GraphQLList,
 } from "graphql";
 
-import AliasValue from "./AliasValue.js";
-
 import db from "./../../db.js";
+import StateToken from "./StateToken.js";
 
 export default new GraphQLObjectType({
-  name: "Alias",
+  name: "InteractiveSet",
   fields: () => ({
     id: {
       type: new GraphQLNonNull(GraphQLID),
@@ -21,13 +21,9 @@ export default new GraphQLObjectType({
         return obj.id;
       },
     },
-    token: {
-      type: new GraphQLNonNull(AliasValue),
-      resolve(obj) {
-        console.log(obj);
-        return true;
-        // return db.data.tokens.find((token) => token.id === obj.token_name);
-      },
+    description: {
+      type: GraphQLString,
     },
+    states: { type: new GraphQLList(StateToken) },
   }),
 });

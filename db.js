@@ -11,6 +11,6 @@ const db = new Low(adapter);
 
 await db.read();
 
-db.data = db.data || { tokens: [], aliases: [] };
+db.data = db.data || { InteractiveSets: [], ColorTokens: [] };
 
 export default db;

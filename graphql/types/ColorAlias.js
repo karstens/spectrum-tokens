@@ -3,15 +3,12 @@ import {
   GraphQLNonNull,
   GraphQLID,
   GraphQLString,
-  GraphQLList,
-  GraphQLEnumType,
 } from "graphql";
 
-import ColorValue from "./ColorValue.js";
-import ColorListValue from "./ColorListValue.js";
+import ColorAliasValue from "./ColorAliasValue.js";
 
 export default new GraphQLObjectType({
-  name: "ColorToken",
+  name: "ColorAlias",
   fields: {
     id: {
       type: new GraphQLNonNull(GraphQLID),
@@ -22,8 +19,12 @@ export default new GraphQLObjectType({
         return obj.id;
       },
     },
-    colorList: {
-      type: new GraphQLList(ColorListValue),
+    type: {
+      type: GraphQLString,
+      resolve: () => "ColorToken",
+    },
+    value: {
+      type: new GraphQLNonNull(ColorAliasValue),
     },
   },
 });

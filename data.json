@@ -1,30 +1,221 @@
 {
-  "tokens": [
+  "InteractiveSets": [
     {
-      "id": "black",
-      "r": 0,
-      "g": 0,
-      "b": 0,
-      "__typename": "ColorToken"
-    },
-    {
-      "id": "white",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "__typename": "ColorToken"
+      "__typename": "InteractiveSet",
+      "id": "neutral-background-color",
+      "description": "Something about what this is and how it is used.",
+      "states": [
+        {
+          "__typename": "StateToken",
+          "state": "DEFAULT",
+          "colorList": [
+            {
+              "__typename": "ColorListAlias",
+              "themes": ["LIGHT", "WIREFRAME"],
+              "value": {
+                "type": "ColorToken",
+                "ref": "gray-800"
+              }
+            },
+            {
+              "__typename": "ColorListAlias",
+              "themes": ["DARK", "DARKEST"],
+              "value": {
+                "type": "ColorToken",
+                "ref": "gray-400"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "StateToken",
+          "state": "HOVER",
+          "colorList": [
+            {
+              "__typename": "ColorListAlias",
+              "themes": ["LIGHT", "WIREFRAME"],
+              "value": {
+                "type": "ColorToken",
+                "ref": "gray-900"
+              }
+            },
+            {
+              "__typename": "ColorListAlias",
+              "themes": ["DARK", "DARKEST"],
+              "value": {
+                "type": "ColorToken",
+                "ref": "gray-300"
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
-  "aliases": [
+  "ColorTokens": [
     {
-      "id": "static-black-focus-ring-color",
-      "token_name": "black",
-      "__typename": "Alias"
+      "__typename": "ColorToken",
+      "id": "gray-300",
+      "colorList": [
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 213,
+            "g": 213,
+            "b": 213
+          },
+          "themes": ["LIGHT"]
+        },
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 84,
+            "g": 84,
+            "b": 84
+          },
+          "themes": ["DARK"]
+        },
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 75,
+            "g": 75,
+            "b": 75
+          },
+          "themes": ["DARKEST"]
+        },
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 210,
+            "g": 220,
+            "b": 243
+          },
+          "themes": ["WIREFRAME"]
+        }
+      ]
     },
     {
-      "id": "static-white-focus-ring-color",
-      "token_name": "white",
-      "__typename": "Alias"
+      "__typename": "ColorToken",
+      "id": "gray-400",
+      "colorList": [
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 177,
+            "g": 177,
+            "b": 177
+          },
+          "themes": ["LIGHT"]
+        },
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 112,
+            "g": 112,
+            "b": 112
+          },
+          "themes": ["DARK"]
+        },
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 106,
+            "g": 106,
+            "b": 106
+          },
+          "themes": ["DARKEST"]
+        },
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 183,
+            "g": 200,
+            "b": 235
+          },
+          "themes": ["WIREFRAME"]
+        }
+      ]
+    },
+    {
+      "__typename": "ColorToken",
+      "id": "gray-800",
+      "colorList": [
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 34,
+            "g": 34,
+            "b": 34
+          },
+          "themes": ["LIGHT"]
+        },
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 235,
+            "g": 235,
+            "b": 235
+          },
+          "themes": ["DARK", "DARKEST"]
+        },
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 73,
+            "g": 110,
+            "b": 194
+          },
+          "themes": ["WIREFRAME"]
+        }
+      ]
+    },
+    {
+      "__typename": "ColorToken",
+      "id": "gray-900",
+      "colorList": [
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "themes": ["LIGHT"]
+        },
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "themes": ["DARK", "DARKEST"]
+        },
+        {
+          "__typename": "ColorListToken",
+          "value": {
+            "__typename": "ColorValue",
+            "r": 72,
+            "g": 110,
+            "b": 194
+          },
+          "themes": ["WIREFRAME"]
+        }
+      ]
     }
   ]
 }
