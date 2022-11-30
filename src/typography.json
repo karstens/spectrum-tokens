@@ -225,14 +225,7 @@
     "value": "{font-family-sans-serif}"
   },
   "heading-sans-serif-font-weight": {
-    "sets": {
-      "spectrum": {
-        "value": "{font-weight-bold}"
-      },
-      "express": {
-        "value": "{font-weight-black}"
-      }
-    }
+    "value": "{font-weight-bold}"
   },
   "heading-sans-serif-font-style": {
     "value": "{font-style-default}"
@@ -241,14 +234,7 @@
     "value": "{font-family-serif}"
   },
   "heading-serif-font-weight": {
-    "sets": {
-      "spectrum": {
-        "value": "{font-weight-bold}"
-      },
-      "express": {
-        "value": "{font-weight-black}"
-      }
-    }
+    "value": "{font-weight-bold}"
   },
   "heading-serif-font-style": {
     "value": "{font-style-default}"
@@ -257,14 +243,7 @@
     "value": "{font-family-cjk}"
   },
   "heading-cjk-font-weight": {
-    "sets": {
-      "spectrum": {
-        "value": "{font-weight-extra-bold}"
-      },
-      "express": {
-        "value": "{font-weight-black}"
-      }
-    }
+    "value": "{font-weight-extra-bold}"
   },
   "heading-cjk-font-style": {
     "value": "{font-style-default}"
@@ -360,27 +339,13 @@
     "value": "{font-style-default}"
   },
   "heading-sans-serif-emphasized-font-weight": {
-    "sets": {
-      "spectrum": {
-        "value": "{font-weight-bold}"
-      },
-      "express": {
-        "value": "{font-weight-black}"
-      }
-    }
+    "value": "{font-weight-bold}"
   },
   "heading-sans-serif-emphasized-font-style": {
     "value": "{font-style-italic}"
   },
   "heading-serif-emphasized-font-weight": {
-    "sets": {
-      "spectrum": {
-        "value": "{font-weight-bold}"
-      },
-      "express": {
-        "value": "{font-weight-black}"
-      }
-    }
+    "value": "{font-weight-bold}"
   },
   "heading-serif-emphasized-font-style": {
     "value": "{font-style-italic}"

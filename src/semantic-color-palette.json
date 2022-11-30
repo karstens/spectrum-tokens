@@ -1,143 +1,45 @@
 {
   "accent-color-100": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-100}"
-      },
-      "express": {
-        "value": "{indigo-100}"
-      }
-    }
+    "value": "{blue-100}"
   },
   "accent-color-200": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-200}"
-      },
-      "express": {
-        "value": "{indigo-200}"
-      }
-    }
+    "value": "{blue-200}"
   },
   "accent-color-300": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-300}"
-      },
-      "express": {
-        "value": "{indigo-300}"
-      }
-    }
+    "value": "{blue-300}"
   },
   "accent-color-400": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-400}"
-      },
-      "express": {
-        "value": "{indigo-400}"
-      }
-    }
+    "value": "{blue-400}"
   },
   "accent-color-500": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-500}"
-      },
-      "express": {
-        "value": "{indigo-500}"
-      }
-    }
+    "value": "{blue-500}"
   },
   "accent-color-600": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-600}"
-      },
-      "express": {
-        "value": "{indigo-600}"
-      }
-    }
+    "value": "{blue-600}"
   },
   "accent-color-700": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-700}"
-      },
-      "express": {
-        "value": "{indigo-700}"
-      }
-    }
+    "value": "{blue-700}"
   },
   "accent-color-800": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-800}"
-      },
-      "express": {
-        "value": "{indigo-800}"
-      }
-    }
+    "value": "{blue-800}"
   },
   "accent-color-900": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-900}"
-      },
-      "express": {
-        "value": "{indigo-900}"
-      }
-    }
+    "value": "{blue-900}"
   },
   "accent-color-1000": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-1000}"
-      },
-      "express": {
-        "value": "{indigo-1000}"
-      }
-    }
+    "value": "{blue-1000}"
   },
   "accent-color-1100": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-1100}"
-      },
-      "express": {
-        "value": "{indigo-1100}"
-      }
-    }
+    "value": "{blue-1100}"
   },
   "accent-color-1200": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-1200}"
-      },
-      "express": {
-        "value": "{indigo-1200}"
-      }
-    }
+    "value": "{blue-1200}"
   },
   "accent-color-1300": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-1300}"
-      },
-      "express": {
-        "value": "{indigo-1300}"
-      }
-    }
+    "value": "{blue-1300}"
   },
   "accent-color-1400": {
-    "sets": {
-      "spectrum": {
-        "value": "{blue-1400}"
-      },
-      "express": {
-        "value": "{indigo-1400}"
-      }
-    }
+    "value": "{blue-1400}"
   },
   "informative-color-100": {
     "value": "{blue-100}"
