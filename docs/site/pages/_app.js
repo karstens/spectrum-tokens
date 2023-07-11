@@ -6,6 +6,7 @@ import "@spectrum-css/page/dist/index-vars.css";
 import "@spectrum-css/table/dist/index-vars.css";
 import "@spectrum-css/typography/dist/index-vars.css";
 import "../styles/sidenav.css";
+import "../styles/global.css";
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />;
