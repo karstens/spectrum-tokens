@@ -3805,6 +3805,17 @@
     "value": "{illustrated-message-body-size}",
     "uuid": "bb3fee51-24cc-4643-9f22-fa1592ab2457"
   },
+  "coach-mark-width": {
+    "component": "coach-mark",
+    "sets": {
+      "desktop": {
+        "value": "296px"
+      },
+      "mobile": {
+        "value": "216px"
+      }
+    }
+  },
   "coach-mark-minimum-width": {
     "component": "coach-mark",
     "sets": {
@@ -3813,8 +3824,19 @@
         "uuid": "9f413341-5ed5-4cd0-8348-1c7141dcab8d"
       },
       "mobile": {
-        "value": "208px",
+        "value": "216px",
         "uuid": "9004d69e-5726-42f5-a4d0-de09db2de784"
+      }
+    }
+  },
+  "coach-mark-maximum-width": {
+    "component": "coach-mark",
+    "sets": {
+      "desktop": {
+        "value": "380px"
+      },
+      "mobile": {
+        "value": "248px"
       }
     }
   },
@@ -3844,6 +3866,17 @@
       }
     }
   },
+  "coach-mark-media-height": {
+    "component": "coach-mark",
+    "sets": {
+      "desktop": {
+        "value": "222px"
+      },
+      "mobile": {
+        "value": "162px"
+      }
+    }
+  },
   "coach-mark-media-minimum-height": {
     "component": "coach-mark",
     "sets": {
@@ -3860,6 +3893,9 @@
   "coach-mark-title-size": {
     "component": "coach-mark",
     "sets": {
+      "desktop": {
+        "value": "{heading-size-xs}"
+      },
       "mobile": {
         "value": "{heading-size-xxs}",
         "uuid": "cd4848b6-d560-475a-9d80-f7b5acebce10"
@@ -3869,6 +3905,9 @@
   "coach-mark-body-size": {
     "component": "coach-mark",
     "sets": {
+      "desktop": {
+        "value": "{body-size-s}"
+      },
       "mobile": {
         "value": "{body-size-xs}",
         "uuid": "a0abef77-dafe-4158-9faa-a4b4b2871e54"
@@ -3878,6 +3917,9 @@
   "coach-mark-pagination-body-size": {
     "component": "coach-mark",
     "sets": {
+      "desktop": {
+        "value": "{body-size-s}"
+      },
       "mobile": {
         "value": "{body-size-xs}",
         "uuid": "350d9235-ff9e-43d7-9298-56b36d58d6de"

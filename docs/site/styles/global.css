@@ -1,3 +1,11 @@
+@import "@spectrum-css/tokens/dist/css/global-vars.css";
+@import "@spectrum-css/tokens/dist/css/spectrum/custom-vars.css";
+@import "@spectrum-css/tokens/dist/css/medium-vars.css";
+@import "@spectrum-css/tokens/dist/css/light-vars.css";
+@import "@spectrum-css/table/dist/index-vars.css";
+@import "@spectrum-css/typography/dist/index-vars.css";
+@import "../styles/sidenav.css";
+
 html,
 body {
   padding: 0 100px;

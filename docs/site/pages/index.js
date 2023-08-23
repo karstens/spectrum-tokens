@@ -28,7 +28,7 @@ export default function Home({ allComponentsData }) {
           <header className="spectrum-Site-sideBarHeader">
             <a href="https://spectrum.adobe.com/">
               <svg
-                class="spectrum-Site-logo spectrum-Icon spectrum-Icon--sizeXXL"
+                className="spectrum-Site-logo spectrum-Icon spectrum-Icon--sizeXXL"
                 viewBox="0 0 30 26"
                 width="32"
                 height="32"
@@ -43,13 +43,13 @@ export default function Home({ allComponentsData }) {
               Spectrum Tokens
             </a>
           </header>
-          <nav class="spectrum-Site-sideBar">
-            <ul class="spectrum-SideNav spectrum-SideNav--multiLevel">
-              <li class="spectrum-SideNav-item">
-                <a href="#" class="spectrum-SideNav-itemLink">
+          <nav className="spectrum-Site-sideBar">
+            <ul className="spectrum-SideNav spectrum-SideNav--multiLevel">
+              <li className="spectrum-SideNav-item">
+                <a href="#" className="spectrum-SideNav-itemLink">
                   Components
                 </a>
-                <ul class="spectrum-SideNav">
+                <ul className="spectrum-SideNav">
                   {allComponentsData.map(({ slug, title }) => (
                     <li className="spectrum-SideNav-item" key={slug}>
                       <Link
